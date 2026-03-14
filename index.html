@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Game Maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>AI Game Maker</h1>
+
+<textarea id="description" placeholder="Describe your game world..."></textarea>
+<button onclick="generateGame()">Generate Game</button>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="controls">
+<button onclick="player.attack()">Attack</button>
+<button onclick="player.dodge()">Dodge</button>
+<button onclick="player.special()">Special</button>
+</div>
+
+<h2>AI Code Generator</h2>
+
+<textarea id="prompt" placeholder="Example: create a sword combat system"></textarea>
+<button onclick="askAI()">Generate Code</button>
+
+<pre id="output"></pre>
+
+<script src="engine.js"></script>
+<script src="mapgen.js"></script>
+<script src="combat.js"></script>
+<script src="generator.js"></script>
+<script src="ai.js"></script>
+
+</body>
+</html>
